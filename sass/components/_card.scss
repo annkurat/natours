@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: $deafult-border-radius;
+    border-radius: $default-border-radius;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -161,7 +161,7 @@
 
   //BACK SIDE STYLING
   &__cta {
-    @include center-horizontal-vertical;
+    @include absoluteCenter;
     width: 90%;
   }
 

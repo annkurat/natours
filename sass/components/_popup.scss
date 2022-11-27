@@ -44,6 +44,11 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.4);
     transition: all 0.4s 0.2s;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &:target &__content {
@@ -54,6 +59,10 @@
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__right {
@@ -61,6 +70,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -71,11 +84,13 @@
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
-
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
-
     hyphens: auto;
+
+    @include respond(tab-port) {
+      column-count: 1;
+    }
   }
 }

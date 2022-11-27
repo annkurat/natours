@@ -731,6 +731,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      width: 100%; } }
 
 .navigation__item {
   margin: 2rem auto; }
